@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "description": "Eightmedia skin for Sanity CMS",
   "author": "Arjen Scherff-de Water",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eightmedia/sanity-theme-eightmedia.git"
+  }
 }
