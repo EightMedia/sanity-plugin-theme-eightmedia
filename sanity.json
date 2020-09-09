@@ -2,7 +2,15 @@
   "parts": [  
     {
       "implements": "part:@sanity/base/theme/variables/override-style",
-      "path": "./src/style/index.css"
+      "path": "style/index.css"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "components/Logo.js"
+    },
+    {
+      "implements": "part:@sanity/base/app-loading-screen",
+      "path": "components/AppLoadingScreen.js"
     }
   ]
 }

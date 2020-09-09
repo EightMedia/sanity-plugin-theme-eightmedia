@@ -1,10 +1,25 @@
 import React from "react";
 import config from "config:sanity";
-import styles from "./Logo.module.css";
+
+const styles = `
+  .logoWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImage {
+    margin-right: 8px;
+  }
+  
+  .logoName {
+    font-weight: 500;
+  }
+`
 
 const Logo = (props) => (
-  <span className={styles.wrapper}>
-    <svg width={122} height={80} viewBox="0 0 122 80" className={styles.logo}>
+  <span className="logoWrapper">
+    <style type="text/css">{styles}</style>
+    <svg width={122} height={80} viewBox="0 0 122 80" className="logoImage">
       <path fill="none" d="M0 0h122v80H0z" />
       <path
         fillRule="evenodd"
@@ -14,7 +29,7 @@ const Logo = (props) => (
       />
     </svg>
 
-    <span className={styles.name}>{config.project.name}</span>
+    <span className="logoName">{config.project.name}</span>
   </span>
 );
 

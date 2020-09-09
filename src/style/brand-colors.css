@@ -6,7 +6,7 @@
   --brand-lightest: var(--white);
   --brand-primary: var(--eight-aqua);
   --brand-primary--inverted: var(--eight-salt);
-  --brand-secondary: var(--eightmedia-tomato);
+  --brand-secondary: var(--eight-tomato);
   --brand-secondary--inverted: var(--brand-lightest);
 
   /* Base */
