@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 8px;
+}
+
+.name {
+  font-weight: 500;
+}

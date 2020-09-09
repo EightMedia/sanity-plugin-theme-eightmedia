@@ -1,0 +1,67 @@
+:root {
+  /* disable weird rotation animation when collapsing panels */
+  --pane-animation-time: 0 !important;
+}
+
+/* make the block editor higher */
+:global(.BlockEditor_scrollContainer_2-5rn) {
+  height: 35rem;
+  resize: vertical;
+}
+
+/* make header black */
+:global(.DefaultPane_header_34GT-) {
+  background: rgba(0, 0, 0, 0.025) !important;
+}
+
+/* make title weigh less */
+:global(.DefaultPane_title_jhKyz) {
+  font-weight: 400;
+}
+
+/* override selected pane item background */
+:global(.PaneItem_linkIsSelected_1M1Ps) {
+  /* background-color: rgba(0, 0, 0, 0.05) !important; */
+  background: #e7f5f9 !important;
+  color: var(--eight-pepper) !important;
+}
+
+/* remove padding from fieldsets */
+:global(.DefaultFieldset_content_2fz2t) {
+  border-radius: 0 !important;
+}
+
+/* style labels */
+:global(.DefaultLabel_root_1vtRm) {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* style labels */
+:global(.DefaultFieldset_legend_2X23k) {
+  font-weight: 500;
+}
+
+/* dialog */
+:global(.DefaultDialog_header_2BMwC),
+:global(.DefaultDialog_content_3NCI0) {
+  border-radius: 0 !important;
+}
+
+/* media browser */
+:global(.iKZKka) {
+  background: white !important;
+}
+
+/* media browser: delete button */
+:global(.iKZKka .DefaultButton_color__danger_3oIev) {
+  background: var(--eight-tomato) !important;
+  color: white !important;
+  margin-right: 8px;
+}
+
+/* add style to fullscreen overlay to show a bit more context */
+:global([class*="FullscreenDialog_root"]) {
+  outline: 10px solid #222;
+  outline-offset: -10px;
+}
