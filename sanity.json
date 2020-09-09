@@ -1,4 +1,8 @@
 {
+  "paths": {
+    "source": "./src",
+    "compiled": "./lib"
+  },
   "parts": [  
     {
       "implements": "part:@sanity/base/theme/variables/override-style",
