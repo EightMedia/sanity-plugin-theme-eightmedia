@@ -13,47 +13,57 @@
 }
 
 /* make the block editor higher */
-:global(.BlockEditor_scrollContainer_2-5rn) {
+:global([class*="PortableTextInput_scrollContainer"]) {
   height: 35rem;
   resize: vertical;
 }
 
+/* less padding inside buttons */
+:global([class*="DefaultButton_content_"]) {
+  padding: .4em calc(0.75em - 1px) !important;
+}
+
+/* make the dividers between panes lighter */
+:global([class*="SplitController_resizer"]:after) {
+  border-left-color: rgba(0, 0, 0, 0.25) !important;;
+}
+
 /* make header black */
-:global(.DefaultPane_header_34GT-) {
+:global([class*="DefaultPane_header_"]) {
   background: rgba(0, 0, 0, 0.025) !important;
 }
 
 /* make title weigh less */
-:global(.DefaultPane_title_jhKyz) {
+:global([class*="DefaultPane_title_"]) {
   font-weight: 400;
 }
 
 /* override selected pane item background */
-:global(.PaneItem_linkIsSelected_1M1Ps) {
+:global([class*="PaneItem_linkIsSelected_"]) {
   /* background-color: rgba(0, 0, 0, 0.05) !important; */
   background: #e7f5f9 !important;
   color: var(--eight-pepper) !important;
 }
 
-/* remove padding from fieldsets */
-:global(.DefaultFieldset_content_2fz2t) {
+/* remove border radius from fieldsets */
+:global([class*="DefaultFieldset_content_"]) {
   border-radius: 0 !important;
 }
 
 /* style labels */
-:global(.DefaultLabel_root_1vtRm) {
+:global([class*="DefaultLabel_root_"]) {
   font-weight: 500;
   font-size: 1rem;
 }
 
 /* style labels */
-:global(.DefaultFieldset_legend_2X23k) {
+:global([class*="DefaultFieldset_legend_"]) {
   font-weight: 500;
 }
 
 /* dialog */
-:global(.DefaultDialog_header_2BMwC),
-:global(.DefaultDialog_content_3NCI0) {
+:global([class*="DefaultDialog_header_"]),
+:global([class*="DefaultDialog_content_"]) {
   border-radius: 0 !important;
 }
 
