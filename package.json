@@ -1,32 +1,39 @@
 {
-  "name": "@eightmedia/sanity-theme-eightmedia",
-  "version": "1.0.3",
+  "name": "@eightmedia/sanity-plugin-theme-eightmedia",
+  "version": "1.2.0",
   "description": "Eightmedia skin for Sanity CMS",
   "author": "Arjen Scherff-de Water",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eightmedia/sanity-theme-eightmedia.git"
+    "url": "git+https://github.com/eightmedia/sanity-plugin-theme-eightmedia.git"
   },
   "bugs": {
-    "url": "https://github.com/eightmedia/sanity-theme-eightmedia/issues"
+    "url": "https://github.com/eightmedia/sanity-plugin-theme-eightmedia/issues"
   },
-  "homepage": "https://github.com/eightmedia/sanity-theme-eightmedia#readme",
+  "homepage": "https://github.com/eightmedia/sanity-plugin-theme-eightmedia#readme",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib --copy-files",
+    "build-style": "cp -r src/style/ lib/style/",
+    "build-document": "parcel build src/components/Document.js --out-dir lib/components/",
+    "build-loader": "babel src/components/AppLoadingScreen.js -d lib/components/ --copy-files --plugins=@babel/plugin-syntax-class-properties,@babel/plugin-proposal-class-properties,react-hot-loader/babel --presets=@babel/preset-env,@babel/preset-react",
+    "build-logo": "babel src/components/Logo.js -d lib/components/ --copy-files --plugins=@babel/plugin-syntax-class-properties,@babel/plugin-proposal-class-properties,react-hot-loader/babel --presets=@babel/preset-env,@babel/preset-react",
+    "build": "npm run build-logo && npm run build-style && npm run build-document && npm run build-loader",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
     "@babel/cli": "^7.5.0",
-    "@babel/plugin-proposal-class-properties": "^7.5.0",
-    "@babel/plugin-syntax-class-properties": "^7.2.0",
+    "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "@sanity/base": "^1.150.7",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-syntax-class-properties": "^7.2.0",
     "babel-eslint": "^10.0.2",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.2",
     "eslint": "^6.0.1",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-plugin-import": "^2.18.0",
@@ -37,5 +44,9 @@
   "peerDependencies": {
     "prop-types": "^15.6 || ^16",
     "react": "^16"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1"
   }
 }
