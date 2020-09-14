@@ -91,11 +91,11 @@
 }
 
 /* tab labels */
-:global([class*=".Tab_label_"]) {
+:global([class*="Tab_label_"]) {
   font-weight: 500;
 }
 
 /* tab active label */
-:global([class*=".Tab_isActive_"]) {
+:global([class*="Tab_isActive_"]) {
   text-decoration: underline;
 }
