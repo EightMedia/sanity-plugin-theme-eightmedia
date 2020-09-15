@@ -99,3 +99,8 @@
 :global([class*="Tab_isActive_"]) {
   text-decoration: underline;
 }
+
+/* vertical center search bar */
+:global([class*="Navbar_search_"]) {
+  margin-top: 3px;
+}
