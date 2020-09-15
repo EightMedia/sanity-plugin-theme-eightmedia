@@ -24,9 +24,9 @@ const AppLoadingScreenStyles = `
     text-align: center;
   }
   
-  .loader-text: {
+  .loader-text {
     display: block;
-    margin-top: 12;
+    margin-top: 12px;
     font-weight: normal;
   }
 
