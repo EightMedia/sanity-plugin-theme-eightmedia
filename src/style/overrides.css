@@ -108,6 +108,11 @@
   color: var(--eight-pepper);
 }
 
+/* media browser: fix svg alignment in dropdowns*/
+:global(.iKZKka .DropDownButton_iconContainer_uRRG_ > svg[data-sanity-icon='true']) {
+  margin: 0;
+}
+
 /* add style to fullscreen overlay to show a bit more context */
 :global([class*="FullscreenDialog_root"]) {
   outline: 10px solid #222;
