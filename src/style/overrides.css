@@ -68,15 +68,44 @@
 }
 
 /* media browser */
-:global(.iKZKka) {
+:global(.iKZKka),
+:global(.sc-AykKC),
+:global(.ckbCqN),
+:global(.heEuvo),
+:global(.eNOyhV),
+:global(.bQcJjA) {
   background: white !important;
 }
 
+/* media browser check mark selected image */
+:global(.icVneo [class*="DefaultButton_icon_"]) {
+  color: var(--eight-pepper) !important;
+}
+
 /* media browser: delete button */
-:global(.iKZKka .DefaultButton_color__danger_3oIev) {
+:global(.iKZKka [class*="DefaultButton_color__danger_"]) {
   background: var(--eight-tomato) !important;
-  color: white !important;
   margin-right: 8px;
+}
+
+:global(.iKZKka [class*="DefaultButton_color__danger_"] [class*="DefaultButton_inner_"]) {
+  color: white !important;
+  font-size: 17px;
+}
+
+/* media browser: select button */
+:global(.iKZKka .ckbCqN .gYEZby [class*="DefaultButton_simple_"]) {
+  margin-left: 20px;
+}
+
+:global(.iKZKka .ckbCqN .gYEZby [class*="DefaultButton_simple_"] strong) {
+  font-weight: 500;
+}
+
+:global(.iKZKka .ckbCqN .gYEZby [class*="DefaultButton_inner_"]) {
+  background: var(--eight-penne) !important;
+  font-size: 17px;
+  color: var(--eight-pepper);
 }
 
 /* add style to fullscreen overlay to show a bit more context */
