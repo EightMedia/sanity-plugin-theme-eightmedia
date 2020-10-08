@@ -12,9 +12,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* fix hover color navbar */
+:global([data-tone="navbar"] > [class*="DefaultButton_inner_"]) {
+  color: white !important;
+}
+
 /* make the block editor higher */
 :global([class*="PortableTextInput_scrollContainer"]) {
-  height: 35rem;
+  height: 40rem;
   resize: vertical;
 }
 
