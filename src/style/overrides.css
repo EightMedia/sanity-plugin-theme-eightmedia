@@ -23,6 +23,11 @@
   resize: vertical;
 }
 
+/* make the block editor smaller in modal */
+:global([class*="DefaultDialog_contentWrapper_"] [class*="PortableTextInput_scrollContainer"]) {
+  height: 10rem;
+}
+
 /* less padding inside buttons */
 :global([class*="DefaultButton_content_"]) {
   padding: .4em calc(0.75em - 1px) !important;
