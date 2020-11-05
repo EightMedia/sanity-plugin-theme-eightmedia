@@ -60,6 +60,15 @@
   border-radius: 0 !important;
 }
 
+/* add more spacing between feeldsets */
+:global([class*="ObjectInput_fieldWrapper_"]) {
+  grid-gap: 3.5rem 1rem;
+}
+
+:global([class*="DefaultFieldset_fieldWrapper_"]) {
+  grid-gap: 2.2rem 1rem;
+}
+
 /* style labels */
 :global([class*="DefaultLabel_root_"]) {
   font-weight: 500;
