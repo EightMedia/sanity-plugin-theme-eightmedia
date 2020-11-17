@@ -64,7 +64,7 @@
   --medium-padding--em: 1em;
   --large-padding--em: 1.5em;
   --extra-large-padding--em: 3em;
-  --text-selection-color: color(var(--brand-primary) alpha(20%));
+  --text-selection-color: color(var(--brand-primary) alpha(75%));
 
   /* Block editor */
   --block-editor-base-font-family: inherit;
