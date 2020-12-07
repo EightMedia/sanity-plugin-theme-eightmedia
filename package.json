@@ -1,6 +1,6 @@
 {
   "name": "@eightmedia/sanity-plugin-theme-eightmedia",
-  "version": "1.4.12",
+  "version": "1.5.0",
   "description": "Eightmedia skin for Sanity CMS",
   "author": "Arjen Scherff-de Water",
   "license": "MIT",
@@ -15,10 +15,8 @@
   "main": "index.js",
   "scripts": {
     "build-style": "cp -r src/style/ lib/style/",
-    "build-document": "parcel build src/components/Document.js --out-dir lib/components/",
-    "build-loader": "babel src/components/AppLoadingScreen.js -d lib/components/ --copy-files --plugins=@babel/plugin-syntax-class-properties,@babel/plugin-proposal-class-properties,react-hot-loader/babel --presets=@babel/preset-env,@babel/preset-react",
     "build-logo": "babel src/components/Logo.js -d lib/components/ --copy-files --plugins=@babel/plugin-syntax-class-properties,@babel/plugin-proposal-class-properties,react-hot-loader/babel --presets=@babel/preset-env,@babel/preset-react",
-    "build": "npm run build-logo && npm run build-style && npm run build-document && npm run build-loader",
+    "build": "npm run build-logo && npm run build-style",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

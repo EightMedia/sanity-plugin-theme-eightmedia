@@ -11,14 +11,6 @@
     {
       "implements": "part:@sanity/base/brand-logo",
       "path": "components/Logo.js"
-    },
-    {
-      "implements": "part:@sanity/base/app-loading-screen",
-      "path": "components/AppLoadingScreen.js"
-    },
-    {
-      "implements": "part:@sanity/base/document",
-      "path": "components/Document.js"
     }
   ]
 }
