@@ -158,3 +158,8 @@
 :global([class*="Navbar_search_"]) {
   margin-top: 3px;
 }
+
+/* make searchable select higher */
+:global([class*="SearchableSelect_listContainer_"]) {
+  max-height: 300px;
+}
