@@ -19,15 +19,15 @@
 }
 
 /* make the block editor higher */
-:global([class*="PortableTextInput_scrollContainer"]) {
+/*:global([class*="PortableTextInput_scrollContainer"]) {
   height: 40rem;
   resize: vertical;
-}
+}*/
 
 /* make the block editor smaller in modal */
-:global([class*="DefaultDialog_contentWrapper_"] [class*="PortableTextInput_scrollContainer"]) {
+/*:global([class*="DefaultDialog_contentWrapper_"] [class*="PortableTextInput_scrollContainer"]) {
   height: 10rem;
-}
+}*/
 
 /* less padding inside buttons */
 :global([class*="DefaultButton_content_"]) {
@@ -67,6 +67,10 @@
 }
 
 :global([class*="DefaultFieldset_fieldWrapper_"]) {
+  grid-gap: 2.2rem 1rem;
+}
+
+:global([class*="DefaultDialog_contentWrapper_"] [class*="ObjectInput_fieldWrapper_"]) {
   grid-gap: 2.2rem 1rem;
 }
 
