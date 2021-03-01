@@ -19,15 +19,15 @@
 }
 
 /* make the block editor higher */
-/*:global([class*="PortableTextInput_scrollContainer"]) {
+:global([class*="PortableTextInput_editorBoxContent_"]) {
   height: 40rem;
   resize: vertical;
-}*/
+}
 
 /* make the block editor smaller in modal */
-/*:global([class*="DefaultDialog_contentWrapper_"] [class*="PortableTextInput_scrollContainer"]) {
+:global([class*="DefaultDialog_contentWrapper_"] [class*="PortableTextInput_editorBoxContent_"]) {
   height: 10rem;
-}*/
+}
 
 /* less padding inside buttons */
 :global([class*="DefaultButton_content_"]) {
