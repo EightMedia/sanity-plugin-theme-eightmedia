@@ -79,6 +79,11 @@
   font-weight: 500;
   font-size: 1rem;
 }
+/* style labels */
+:global([class*="DefaultFieldset_label_"]) {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
 
 /* style labels */
 :global([class*="DefaultFieldset_legend_"]) {
