@@ -1,8 +1,8 @@
 {
   "name": "@eightmedia/sanity-plugin-theme-eightmedia",
-  "version": "1.6.3",
-  "description": "Eightmedia skin for Sanity CMS",
-  "author": "Arjen Scherff-de Water",
+  "version": "1.6.4",
+  "description": "Eight skin for Sanity CMS",
+  "author": "Eight",
   "license": "MIT",
   "repository": {
     "type": "git",

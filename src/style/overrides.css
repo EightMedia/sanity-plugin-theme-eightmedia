@@ -172,3 +172,7 @@
 :global([class*="SearchableSelect_listContainer_"]) {
   max-height: 300px;
 }
+
+:global([data-text] *::selection) {
+  background: var(--text-selection-color) !important;
+}
